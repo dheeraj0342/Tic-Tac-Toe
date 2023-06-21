@@ -1,0 +1,80 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,400&family=Lato:ital,wght@0,700;1,300&family=Poppins:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    display: grid;
+    place-items: center;
+}
+.btn{
+    cursor: pointer;
+    position: absolute;
+    bottom: 120px;
+    padding:20px;
+    background-color:#957ac9;
+    color: #fff;
+    font-size: large;
+    border-radius: 1.2rem;
+    box-shadow: 0px 0px 4px 5px #242B2E;
+    display: none;
+    
+}
+.game-info{
+    position: absolute;
+    top:30px;
+    background-color:#957ac9;
+    font-size: large;
+    color: #fff;
+    padding: 14px 75px;
+    border-radius: 2rem;
+    border: 3px solid  #242B2E;
+
+}
+.main-box{
+    padding: 20px;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:#957ac9;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 4px 5px #242B2E;
+}
+.box{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    position: relative;
+    color: #fff;
+    aspect-ratio: 1/1;
+}
+
+.box-1,.box-2,.box-4,.box-5{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.box-3,.box-6{
+    border-bottom: 2px solid #fff;
+}
+.box-7,.box-8{
+    border-right: 2px solid #fff;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color:#38CC77;
+}
